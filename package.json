@@ -13,10 +13,9 @@
   "dependencies": {
     "@nuxt/http": "latest",
     "express": "latest",
+    "knex": "^0.95.4",
     "nuxt": "latest",
-    "pg": "^8.5.1",
-    "pg-hstore": "^2.3.3",
-    "sequelize": "^6.6.2"
+    "pg": "^8.5.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
