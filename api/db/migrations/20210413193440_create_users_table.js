@@ -7,7 +7,8 @@ exports.up = function(knex) {
         .primary()
         .notNullable()
         .defaultTo(knex.raw("uuid_generate_v4()"));
-      table.string("username").notNullable();
+      table.string("email").notNullable();
+      table.string("password").notNullable();
     });
 };
 
