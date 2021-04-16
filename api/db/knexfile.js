@@ -5,7 +5,7 @@ module.exports = {
     client: "postgresql",
     connection: {
       database: "admintory",
-      user: "postgres",
+      user: process.env.USER,
       password: "root"
     },
     pool: {
@@ -14,6 +14,9 @@ module.exports = {
     },
     migrations: {
       tableName: "knex_migrations"
+    },
+    seeds: {
+      directory: "./seeds"
     }
   }
 };

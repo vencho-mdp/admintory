@@ -1,7 +1,7 @@
 export default {
-  privateRuntimeConfig: {
-    secret: process.env.TEST
-  },
+  // privateRuntimeConfig: {
+  //   secret: process.env.TEST
+  // },
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
