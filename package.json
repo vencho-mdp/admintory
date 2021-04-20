@@ -10,10 +10,19 @@
   },
   "dependencies": {
     "@nuxt/http": "latest",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "bcrypt": "^5.0.1",
+    "bootstrap-vue": "^2.21.2",
     "express": "latest",
     "knex": "^0.95.4",
+    "morgan": "^1.10.0",
+    "node-sass": "^5.0.0",
     "nuxt": "latest",
-    "pg": "^8.5.1"
+    "pg": "^8.5.1",
+    "sass-loader": "^10.1.1",
+    "vuelidate": "^0.7.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^1.3.0"
+  }
 }

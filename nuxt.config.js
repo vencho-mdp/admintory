@@ -1,4 +1,20 @@
 export default {
+  buildModules: [["@nuxtjs/google-fonts"]],
+  googleFonts: {
+    families: {
+      Roboto: true,
+      "IBM+Plex+Sans": true
+    }
+  },
+  router: {
+    // extendRoutes(routes, resolve) {
+    //   routes.push({
+    //     name: "index",
+    //     path: "/",
+    //     component: resolve(__dirname, "pages/login.vue")
+    //   });
+    // }
+  },
   // privateRuntimeConfig: {
   //   secret: process.env.TEST
   // },
@@ -29,13 +45,13 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ["@/assets/scss/main.scss", "@/assets/css/buttons.css"],
 
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [{ src: "~/plugins/Vuelidate" }],
 
   /*
    ** Auto import components
@@ -44,21 +60,22 @@ export default {
   components: true,
 
   /*
-   ** Nuxt.js dev-modules
-   */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    "@nuxtjs/eslint-module"
-  ],
-
-  /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://http.nuxtjs.org
-    "@nuxt/http"
+    "@nuxt/http",
+    "bootstrap-vue/nuxt",
+    "@nuxtjs/style-resources"
   ],
-
+  bootstrapVue: {
+    bootstrapCSS: false,
+    bootstrapVueCSS: false,
+    icons: true
+  },
+  styleResources: {
+    scss: "@/assets/scss/_variables.scss"
+  },
   /*
    ** Server Middleware
    */

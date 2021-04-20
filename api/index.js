@@ -1,7 +1,14 @@
 const express = require("express");
+const morgan = require("morgan");
 
 // Create express instance
 const app = express();
+
+//Body Parser
+app.use(express.json());
+
+//Morgan
+app.use(morgan("tiny"));
 
 // Require API routes
 const user = require("./routes/user");
