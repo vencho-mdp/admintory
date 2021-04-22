@@ -1,4 +1,5 @@
 export default {
+  loading: false,
   buildModules: [["@nuxtjs/google-fonts"]],
   googleFonts: {
     families: {
@@ -6,7 +7,25 @@ export default {
       "IBM+Plex+Sans": true
     }
   },
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: "accessToken"
+        },
+        endpoints: {
+          login: {
+            url: "api/auth/login",
+            method: "post"
+          },
+          user: false
+        }
+      }
+    }
+  },
   router: {
+    middleware: ["auth"]
+
     // extendRoutes(routes, resolve) {
     //   routes.push({
     //     name: "index",
@@ -64,7 +83,8 @@ export default {
    */
   modules: [
     // Doc: https://http.nuxtjs.org
-    "@nuxt/http",
+    "@nuxtjs/axios",
+    "@nuxtjs/auth-next",
     "bootstrap-vue/nuxt",
     "@nuxtjs/style-resources"
   ],

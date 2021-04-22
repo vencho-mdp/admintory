@@ -1,7 +1,6 @@
 <template>
   <section class="container">
     <div>
-      <Logo />
       <h1 class="title">
         {{ error.statusCode }}
       </h1>
@@ -23,7 +22,7 @@ export default {
       default: () => ({})
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -37,30 +36,20 @@ export default {
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
 }
-.info
-{
+.info {
   font-weight: 300;
   color: #9aabb1;
   margin: 0;
 }
-.button
-{
+.button {
   margin-top: 50px;
 }
 </style>

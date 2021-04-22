@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(morgan("tiny"));
 
 // Require API routes
-const user = require("./routes/user");
+const user = require("./routes/auth");
 
 // Import API Routes
 app.use(user);
