@@ -1,5 +1,5 @@
-const express = require("express");
-const morgan = require("morgan");
+const express = require('express');
+const morgan = require('morgan');
 
 // Create express instance
 const app = express();
@@ -8,13 +8,13 @@ const app = express();
 app.use(express.json());
 
 //Morgan
-app.use(morgan("tiny"));
+app.use(morgan('tiny'));
 
 // Require API routes
-const user = require("./routes/auth");
+const routes = require('./routes/index');
 
 // Import API Routes
-app.use(user);
+app.use(routes);
 
 // Export express app
 module.exports = app;

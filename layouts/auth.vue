@@ -6,13 +6,13 @@
     <div class="bg"></div>
   </div>
 </template>
-<style>
-.bg {
-  z-index: -1;
-  position: absolute;
-  top: 0%;
-  background-color: #151d31;
-  height: 50vh;
-  width: 100vw;
-}
+<style scoped lang="scss">
+  .bg {
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    background-color: $bg-color;
+    height: 50vh;
+    width: 100vw;
+  }
 </style>

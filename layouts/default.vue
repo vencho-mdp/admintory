@@ -1,19 +1,19 @@
 <template>
-  <div
-    class="d-flex flex-column justify-content-center align-items-center vh-100"
-  >
-    <Nuxt />
-    <div class="bg"></div>
+  <div class="vh-100">
+    <LeftNavbar />
+    <Nuxt id="Nuxt" />
   </div>
 </template>
 
-<style>
-.bg {
-  z-index: -1;
-  position: absolute;
-  top: 0%;
-  background-color: #151d31;
-  height: 50vh;
-  width: 100vw;
-}
+<style scoped>
+  div {
+    background-color: #f3f3fa;
+    display: flex;
+    padding: 0 20px 20px 0;
+  }
+  #Nuxt {
+    width: 80%;
+    margin-left: 40px;
+    margin-right: 20px;
+  }
 </style>

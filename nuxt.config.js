@@ -1,22 +1,24 @@
 export default {
   loading: false,
-  buildModules: [["@nuxtjs/google-fonts"]],
+  buildModules: [['@nuxtjs/google-fonts']],
   googleFonts: {
     families: {
       Roboto: true,
-      "IBM+Plex+Sans": true
+      'IBM+Plex+Sans': true,
+      'Merriweather+Sans': true
     }
   },
   auth: {
     strategies: {
       local: {
         token: {
-          property: "accessToken"
+          property: 'accessToken',
+          maxAge: 60 * 60 * 60 * 24
         },
         endpoints: {
           login: {
-            url: "api/auth/login",
-            method: "post"
+            url: 'api/auth/login',
+            method: 'post'
           },
           user: false
         }
@@ -24,7 +26,7 @@ export default {
     }
   },
   router: {
-    middleware: ["auth"]
+    middleware: ['auth']
 
     // extendRoutes(routes, resolve) {
     //   routes.push({
@@ -41,36 +43,36 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
-  target: "server",
+  target: 'server',
 
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || "",
+    title: process.env.npm_package_name || '',
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: "description",
-        name: "description",
-        content: process.env.npm_package_description || ""
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   /*
    ** Global CSS
    */
-  css: ["@/assets/scss/main.scss", "@/assets/css/buttons.css"],
+  css: ['@/assets/scss/main.scss', '@/assets/css/form_elements.css'],
 
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: "~/plugins/Vuelidate" }],
+  plugins: [{ src: '~/plugins/Vuelidate' }],
 
   /*
    ** Auto import components
@@ -83,10 +85,11 @@ export default {
    */
   modules: [
     // Doc: https://http.nuxtjs.org
-    "@nuxtjs/axios",
-    "@nuxtjs/auth-next",
-    "bootstrap-vue/nuxt",
-    "@nuxtjs/style-resources"
+    '@nuxtjs/axios',
+    '@nuxtjs/svg',
+    '@nuxtjs/auth-next',
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/style-resources'
   ],
   bootstrapVue: {
     bootstrapCSS: false,
@@ -94,13 +97,13 @@ export default {
     icons: true
   },
   styleResources: {
-    scss: "@/assets/scss/_variables.scss"
+    scss: '@/assets/scss/_variables.scss'
   },
   /*
    ** Server Middleware
    */
   serverMiddleware: {
-    "/api": "~/api"
+    '/api': '~/api'
   },
 
   /*

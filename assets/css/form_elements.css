@@ -1,5 +1,5 @@
 button {
-  font-family: "Roboto" !important;
+  font-family: 'Roboto' !important;
 }
 .btn-disabled {
   background-color: rgb(0, 0, 0);
@@ -17,4 +17,8 @@ label {
 }
 .invalid-feedback {
   font-size: 0.85rem;
+}
+input,
+select {
+  border-radius: 5px !important;
 }
