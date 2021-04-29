@@ -1,6 +1,6 @@
 <template>
-  <main class="main">
-    <h1>Materias Primas</h1>
+  <main class="wrapper">
+    <h1>Proveedores</h1>
     <FilterComponent />
     <CustomTable
       :fields="[{ key: 'Hi' }, { key: 'Foo' }, { key: 'Barr' }]"
@@ -30,7 +30,7 @@
 </script>
 
 <style scoped>
-  .main {
+  .wrapper {
     width: 75%;
   }
 </style>
