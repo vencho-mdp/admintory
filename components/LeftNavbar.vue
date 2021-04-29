@@ -1,12 +1,14 @@
 <template>
   <b-nav vertical justified class="justify-content-around">
-    <b-nav-item class="nav__logo"> Admintory</b-nav-item>
-    <b-nav-item>Proveedores</b-nav-item>
-    <b-nav-item>Materias Primas</b-nav-item>
-    <b-nav-item>Productos</b-nav-item>
-    <b-nav-item>Kits</b-nav-item>
-    <b-nav-item>Clientes</b-nav-item>
-    <b-nav-item>Pedidos</b-nav-item>
+    <b-nav-item to="/home" class="nav__logo">
+      <img src="~assets/logo.svg" alt="Logo" /> Admintory</b-nav-item
+    >
+    <b-nav-item to="suppliers">Proveedores</b-nav-item>
+    <b-nav-item to="source-materials">Materias Primas</b-nav-item>
+    <b-nav-item to="products">Productos</b-nav-item>
+    <b-nav-item to="kits">Kits</b-nav-item>
+    <b-nav-item to="customers">Clientes</b-nav-item>
+    <b-nav-item to="orders">Pedidos</b-nav-item>
   </b-nav>
 </template>
 
@@ -14,12 +16,17 @@
   .nav {
     background: $bg-color;
     min-height: 100vh;
-    width: clamp(200px, 15vw, 250px);
+    width: 250px;
+    .nuxt-link-active {
+      font-size: 1.6rem !important;
+      font-weight: bold;
+      color: blue;
+    }
     &-item {
       text-align: center;
       padding: 0;
       a {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: rgb(255, 255, 255) !important;
       }
     }
@@ -30,7 +37,7 @@
         align-items: center;
         padding: 0 !important;
         font-family: 'Merriweather Sans';
-        font-family: 1.25rem !important;
+        font-size: 2rem !important;
       }
     }
   }
