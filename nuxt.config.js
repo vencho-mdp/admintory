@@ -26,15 +26,14 @@ export default {
     }
   },
   router: {
-    middleware: ['auth']
-
-    // extendRoutes(routes, resolve) {
-    //   routes.push({
-    //     name: "index",
-    //     path: "/",
-    //     component: resolve(__dirname, "pages/login.vue")
-    //   });
-    // }
+    middleware: ['auth'],
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'index',
+        path: '/',
+        component: resolve(__dirname, 'pages/suppliers.vue')
+      });
+    }
   },
   // privateRuntimeConfig: {
   //   secret: process.env.TEST

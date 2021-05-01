@@ -18,7 +18,7 @@
     min-height: 100vh;
     width: 250px;
     .nuxt-link-active {
-      font-size: 1.6rem !important;
+      font-size: 1.4rem !important;
       font-weight: bold;
       color: blue;
     }
@@ -37,7 +37,7 @@
         align-items: center;
         padding: 0 !important;
         font-family: 'Merriweather Sans';
-        font-size: 2rem !important;
+        font-size: 1.6rem !important;
       }
     }
   }
