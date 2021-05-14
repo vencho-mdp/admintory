@@ -1,4 +1,5 @@
 const db = require('../db/db');
+const jwt = require('jsonwebtoken');
 
 class SupplierController {
   async createSupplier(req, res) {
@@ -10,6 +11,9 @@ class SupplierController {
       phone_number,
       userid
     } = req.body;
+    const decodedUserid = jwt.verify(userid, process.env.ACCESS_TOKEN_SECRET)
+      .id;
+    console.log(decodedUserid);
     try {
       const [id] = await db('supplier')
         .returning('id')
@@ -19,13 +23,15 @@ class SupplierController {
           address,
           company,
           phone_number,
-          userid
+          userid: decodedUserid
         });
+      console.log(id);
       return res.status(201).json({
         message: 'Supplier Created',
         id
       });
     } catch (error) {
+      console.log(error);
       return res.status(500).json({
         message: 'Something went wrong',
         error
@@ -65,8 +71,10 @@ class SupplierController {
   }
   async getAllSuppliers(req, res) {
     const { userid } = req.params;
+    const decodedUserid = jwt.verify(userid, process.env.ACCESS_TOKEN_SECRET)
+      .id;
     try {
-      const suppliers = await db('supplier').where({ userid });
+      const suppliers = await db('supplier').where('userid', decodedUserid);
       res.status(200).json([...suppliers]);
     } catch (error) {
       return res.status(404).json({

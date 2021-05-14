@@ -1,0 +1,1186 @@
+[
+  {
+    "name": "buenos aires",
+    "prefix": "11"
+  },
+  {
+    "name": "acebal",
+    "prefix": "3469"
+  },
+  {
+    "name": "adelia maria",
+    "prefix": "3585"
+  },
+  {
+    "name": "aimogasta",
+    "prefix": "3827"
+  },
+  {
+    "name": "alcaraz",
+    "prefix": "3438"
+  },
+  {
+    "name": "alejandro korn",
+    "prefix": "2225"
+  },
+  {
+    "name": "alta gracia",
+    "prefix": "3547"
+  },
+  {
+    "name": "amaicha del valle",
+    "prefix": "3892"
+  },
+  {
+    "name": "america",
+    "prefix": "2337"
+  },
+  {
+    "name": "añatuya",
+    "prefix": "3844"
+  },
+  {
+    "name": "andalgala",
+    "prefix": "3835"
+  },
+  {
+    "name": "apostoles",
+    "prefix": "3758"
+  },
+  {
+    "name": "argüello",
+    "prefix": "3543"
+  },
+  {
+    "name": "arrecifes",
+    "prefix": "2478"
+  },
+  {
+    "name": "arroyito",
+    "prefix": "3576"
+  },
+  {
+    "name": "arroyo seco",
+    "prefix": "3402"
+  },
+  {
+    "name": "ayacucho",
+    "prefix": "2296"
+  },
+  {
+    "name": "azul",
+    "prefix": "2281"
+  },
+  {
+    "name": "bahia blanca",
+    "prefix": "291"
+  },
+  {
+    "name": "balcarce",
+    "prefix": "2266"
+  },
+  {
+    "name": "balnearia",
+    "prefix": "3563"
+  },
+  {
+    "name": "bandera",
+    "prefix": "3857"
+  },
+  {
+    "name": "barrancas",
+    "prefix": "3466"
+  },
+  {
+    "name": "barreal",
+    "prefix": "2648"
+  },
+  {
+    "name": "bell ville",
+    "prefix": "3537"
+  },
+  {
+    "name": "benito juarez",
+    "prefix": "2292"
+  },
+  {
+    "name": "bernardo de irigoyen",
+    "prefix": "3741"
+  },
+  {
+    "name": "bolivar",
+    "prefix": "2314"
+  },
+  {
+    "name": "bouchard",
+    "prefix": "3387"
+  },
+  {
+    "name": "bragado",
+    "prefix": "2342"
+  },
+  {
+    "name": "buena esperanza",
+    "prefix": "2658"
+  },
+  {
+    "name": "burruyacu",
+    "prefix": "3894"
+  },
+  {
+    "name": "caa cati",
+    "prefix": "3781"
+  },
+  {
+    "name": "cafayate",
+    "prefix": "3868"
+  },
+  {
+    "name": "caleufu",
+    "prefix": "2335"
+  },
+  {
+    "name": "campana",
+    "prefix": "3489"
+  },
+  {
+    "name": "campo gallo",
+    "prefix": "3846"
+  },
+  {
+    "name": "cañada de gomez",
+    "prefix": "3471"
+  },
+  {
+    "name": "canals",
+    "prefix": "3463"
+  },
+  {
+    "name": "cañuelas",
+    "prefix": "2226"
+  },
+  {
+    "name": "carhue",
+    "prefix": "2936"
+  },
+  {
+    "name": "carlos casares",
+    "prefix": "2395"
+  },
+  {
+    "name": "carlos spegazzini",
+    "prefix": "2274"
+  },
+  {
+    "name": "carlos tejedor",
+    "prefix": "2357"
+  },
+  {
+    "name": "carmen de areco",
+    "prefix": "2273"
+  },
+  {
+    "name": "casilda",
+    "prefix": "3464"
+  },
+  {
+    "name": "catamarca",
+    "prefix": "383"
+  },
+  {
+    "name": "ceres",
+    "prefix": "3491"
+  },
+  {
+    "name": "chacabuco",
+    "prefix": "2352"
+  },
+  {
+    "name": "chajari",
+    "prefix": "3456"
+  },
+  {
+    "name": "chamical",
+    "prefix": "3826"
+  },
+  {
+    "name": "charadai",
+    "prefix": "3721"
+  },
+  {
+    "name": "charata",
+    "prefix": "3731"
+  },
+  {
+    "name": "chascomus",
+    "prefix": "2241"
+  },
+  {
+    "name": "chepes",
+    "prefix": "3821"
+  },
+  {
+    "name": "chilecito",
+    "prefix": "3825"
+  },
+  {
+    "name": "chivilcoy",
+    "prefix": "2346"
+  },
+  {
+    "name": "choele choel",
+    "prefix": "2946"
+  },
+  {
+    "name": "chos malal",
+    "prefix": "2948"
+  },
+  {
+    "name": "claromeco",
+    "prefix": "2982"
+  },
+  {
+    "name": "clorinda",
+    "prefix": "3718"
+  },
+  {
+    "name": "colon",
+    "prefix": "2473"
+  },
+  {
+    "name": "colon",
+    "prefix": "3447"
+  },
+  {
+    "name": "comandante fontana",
+    "prefix": "3716"
+  },
+  {
+    "name": "comodoro rivadavia",
+    "prefix": "297"
+  },
+  {
+    "name": "concepcion",
+    "prefix": "3865"
+  },
+  {
+    "name": "concepcion del uruguay",
+    "prefix": "3442"
+  },
+  {
+    "name": "concordia",
+    "prefix": "345"
+  },
+  {
+    "name": "cordoba",
+    "prefix": "351"
+  },
+  {
+    "name": "coronel brandsen",
+    "prefix": "2223"
+  },
+  {
+    "name": "coronel dorrego",
+    "prefix": "2921"
+  },
+  {
+    "name": "coronel moldes",
+    "prefix": "3582"
+  },
+  {
+    "name": "coronel pringles",
+    "prefix": "2922"
+  },
+  {
+    "name": "coronel suarez",
+    "prefix": "2926"
+  },
+  {
+    "name": "coronel vidal",
+    "prefix": "2265"
+  },
+  {
+    "name": "corral de bustos",
+    "prefix": "3468"
+  },
+  {
+    "name": "corrientes",
+    "prefix": "379"
+  },
+  {
+    "name": "cruz del eje",
+    "prefix": "3549"
+  },
+  {
+    "name": "curuzu cuatia",
+    "prefix": "3774"
+  },
+  {
+    "name": "daireaux",
+    "prefix": "2316"
+  },
+  {
+    "name": "darregueira",
+    "prefix": "2924"
+  },
+  {
+    "name": "dean funes",
+    "prefix": "3521"
+  },
+  {
+    "name": "dolores",
+    "prefix": "2245"
+  },
+  {
+    "name": "eduardo castex",
+    "prefix": "2334"
+  },
+  {
+    "name": "el trebol",
+    "prefix": "3401"
+  },
+  {
+    "name": "eldorado",
+    "prefix": "3751"
+  },
+  {
+    "name": "escobar",
+    "prefix": "348"
+  },
+  {
+    "name": "esperanza",
+    "prefix": "3496"
+  },
+  {
+    "name": "esquel",
+    "prefix": "2945"
+  },
+  {
+    "name": "federal",
+    "prefix": "3454"
+  },
+  {
+    "name": "firmat",
+    "prefix": "3465"
+  },
+  {
+    "name": "formosa",
+    "prefix": "370"
+  },
+  {
+    "name": "frias",
+    "prefix": "3854"
+  },
+  {
+    "name": "galvez",
+    "prefix": "3404"
+  },
+  {
+    "name": "general acha",
+    "prefix": "2952"
+  },
+  {
+    "name": "general alvear",
+    "prefix": "2625"
+  },
+  {
+    "name": "general arenales",
+    "prefix": "2353"
+  },
+  {
+    "name": "general belgrano",
+    "prefix": "2243"
+  },
+  {
+    "name": "general jose de san martin",
+    "prefix": "3725"
+  },
+  {
+    "name": "general lamadrid",
+    "prefix": "2286"
+  },
+  {
+    "name": "general madariaga",
+    "prefix": "2267"
+  },
+  {
+    "name": "general mosconi",
+    "prefix": "3711"
+  },
+  {
+    "name": "general pico",
+    "prefix": "2302"
+  },
+  {
+    "name": "general pinto",
+    "prefix": "2356"
+  },
+  {
+    "name": "general roca",
+    "prefix": "298"
+  },
+  {
+    "name": "general villegas",
+    "prefix": "3388"
+  },
+  {
+    "name": "glew",
+    "prefix": "2224"
+  },
+  {
+    "name": "gobernador crespo",
+    "prefix": "3498"
+  },
+  {
+    "name": "gonzalez catan",
+    "prefix": "2202"
+  },
+  {
+    "name": "goya",
+    "prefix": "3777"
+  },
+  {
+    "name": "gualeguay",
+    "prefix": "3444"
+  },
+  {
+    "name": "gualeguaychu",
+    "prefix": "3446"
+  },
+  {
+    "name": "guamini",
+    "prefix": "2929"
+  },
+  {
+    "name": "huanguelen sur",
+    "prefix": "2933"
+  },
+  {
+    "name": "huinca renanco",
+    "prefix": "2336"
+  },
+  {
+    "name": "humahuaca",
+    "prefix": "3887"
+  },
+  {
+    "name": "ingeniero jacobacci",
+    "prefix": "2940"
+  },
+  {
+    "name": "inriville",
+    "prefix": "3467"
+  },
+  {
+    "name": "ituzaingo",
+    "prefix": "3786"
+  },
+  {
+    "name": "jachal",
+    "prefix": "2647"
+  },
+  {
+    "name": "jesus maria",
+    "prefix": "3525"
+  },
+  {
+    "name": "jose c. paz",
+    "prefix": "2320"
+  },
+  {
+    "name": "juan b. alberdi",
+    "prefix": "2354"
+  },
+  {
+    "name": "juan maria gutierrez",
+    "prefix": "2229"
+  },
+  {
+    "name": "junin",
+    "prefix": "236"
+  },
+  {
+    "name": "la carlota",
+    "prefix": "3584"
+  },
+  {
+    "name": "la dulce",
+    "prefix": "2264"
+  },
+  {
+    "name": "la falda",
+    "prefix": "3548"
+  },
+  {
+    "name": "la paz",
+    "prefix": "3437"
+  },
+  {
+    "name": "la paz",
+    "prefix": "2626"
+  },
+  {
+    "name": "la plata",
+    "prefix": "221"
+  },
+  {
+    "name": "la puerta",
+    "prefix": "3575"
+  },
+  {
+    "name": "la quiaca",
+    "prefix": "3885"
+  },
+  {
+    "name": "la rioja",
+    "prefix": "380"
+  },
+  {
+    "name": "la toma",
+    "prefix": "2655"
+  },
+  {
+    "name": "laboulaye",
+    "prefix": "3385"
+  },
+  {
+    "name": "laprida",
+    "prefix": "2285"
+  },
+  {
+    "name": "las flores",
+    "prefix": "2244"
+  },
+  {
+    "name": "las lajitas",
+    "prefix": "3877"
+  },
+  {
+    "name": "las lomitas",
+    "prefix": "3715"
+  },
+  {
+    "name": "las varillas",
+    "prefix": "3533"
+  },
+  {
+    "name": "lezama",
+    "prefix": "2242"
+  },
+  {
+    "name": "libertador general san martin",
+    "prefix": "3886"
+  },
+  {
+    "name": "lincoln",
+    "prefix": "2355"
+  },
+  {
+    "name": "llambi campbell",
+    "prefix": "3497"
+  },
+  {
+    "name": "loberia",
+    "prefix": "2261"
+  },
+  {
+    "name": "lobos",
+    "prefix": "2227"
+  },
+  {
+    "name": "lopez camelo",
+    "prefix": "3327"
+  },
+  {
+    "name": "los toldos",
+    "prefix": "2358"
+  },
+  {
+    "name": "lujan",
+    "prefix": "2323"
+  },
+  {
+    "name": "macachin",
+    "prefix": "2953"
+  },
+  {
+    "name": "machagai",
+    "prefix": "3734"
+  },
+  {
+    "name": "magdalena",
+    "prefix": "2221"
+  },
+  {
+    "name": "maipu",
+    "prefix": "2268"
+  },
+  {
+    "name": "mar de ajo",
+    "prefix": "2257"
+  },
+  {
+    "name": "mar del plata",
+    "prefix": "223"
+  },
+  {
+    "name": "marcos juarez",
+    "prefix": "3472"
+  },
+  {
+    "name": "medanos",
+    "prefix": "2927"
+  },
+  {
+    "name": "mendoza",
+    "prefix": "261"
+  },
+  {
+    "name": "mercedes",
+    "prefix": "2324"
+  },
+  {
+    "name": "mercedes",
+    "prefix": "3773"
+  },
+  {
+    "name": "mercedes",
+    "prefix": "2657"
+  },
+  {
+    "name": "merlo",
+    "prefix": "220"
+  },
+  {
+    "name": "merlo",
+    "prefix": "2656"
+  },
+  {
+    "name": "metan",
+    "prefix": "3876"
+  },
+  {
+    "name": "miramar",
+    "prefix": "2291"
+  },
+  {
+    "name": "moises ville",
+    "prefix": "3409"
+  },
+  {
+    "name": "monte",
+    "prefix": "2271"
+  },
+  {
+    "name": "monte caseros",
+    "prefix": "3775"
+  },
+  {
+    "name": "monte quemado",
+    "prefix": "3841"
+  },
+  {
+    "name": "monteagudo",
+    "prefix": "3891"
+  },
+  {
+    "name": "monteros",
+    "prefix": "3863"
+  },
+  {
+    "name": "moreno",
+    "prefix": "237"
+  },
+  {
+    "name": "morteros",
+    "prefix": "3562"
+  },
+  {
+    "name": "navarro",
+    "prefix": "2272"
+  },
+  {
+    "name": "necochea",
+    "prefix": "2262"
+  },
+  {
+    "name": "neuquen",
+    "prefix": "299"
+  },
+  {
+    "name": "nogoya",
+    "prefix": "3435"
+  },
+  {
+    "name": "norberto de la riestra",
+    "prefix": "2343"
+  },
+  {
+    "name": "obera",
+    "prefix": "3755"
+  },
+  {
+    "name": "olavarria",
+    "prefix": "2284"
+  },
+  {
+    "name": "oliva",
+    "prefix": "3532"
+  },
+  {
+    "name": "oran",
+    "prefix": "3878"
+  },
+  {
+    "name": "parana",
+    "prefix": "343"
+  },
+  {
+    "name": "paso de los libres",
+    "prefix": "3772"
+  },
+  {
+    "name": "pedro luro",
+    "prefix": "2928"
+  },
+  {
+    "name": "pehuajo",
+    "prefix": "2396"
+  },
+  {
+    "name": "pergamino",
+    "prefix": "2477"
+  },
+  {
+    "name": "perito moreno",
+    "prefix": "2963"
+  },
+  {
+    "name": "pigüe",
+    "prefix": "2923"
+  },
+  {
+    "name": "pilar",
+    "prefix": "230"
+  },
+  {
+    "name": "pinamar",
+    "prefix": "2254"
+  },
+  {
+    "name": "posadas",
+    "prefix": "376"
+  },
+  {
+    "name": "presidencia roque saenz pena",
+    "prefix": "364"
+  },
+  {
+    "name": "puerto iguazu",
+    "prefix": "3757"
+  },
+  {
+    "name": "punta alta",
+    "prefix": "2932"
+  },
+  {
+    "name": "quimili",
+    "prefix": "3843"
+  },
+  {
+    "name": "quines",
+    "prefix": "2651"
+  },
+  {
+    "name": "rafaela",
+    "prefix": "3492"
+  },
+  {
+    "name": "ramallo",
+    "prefix": "3407"
+  },
+  {
+    "name": "ranchillos",
+    "prefix": "3869"
+  },
+  {
+    "name": "rapelli",
+    "prefix": "3861"
+  },
+  {
+    "name": "rauch",
+    "prefix": "2297"
+  },
+  {
+    "name": "realico",
+    "prefix": "2331"
+  },
+  {
+    "name": "reconquista",
+    "prefix": "3482"
+  },
+  {
+    "name": "recreo",
+    "prefix": "3832"
+  },
+  {
+    "name": "resistencia",
+    "prefix": "362"
+  },
+  {
+    "name": "rio colorado",
+    "prefix": "2931"
+  },
+  {
+    "name": "rio cuarto",
+    "prefix": "358"
+  },
+  {
+    "name": "rio gallegos",
+    "prefix": "2966"
+  },
+  {
+    "name": "rio grande",
+    "prefix": "2964"
+  },
+  {
+    "name": "rio mayo",
+    "prefix": "2903"
+  },
+  {
+    "name": "rio primero",
+    "prefix": "3574"
+  },
+  {
+    "name": "rio segundo",
+    "prefix": "3572"
+  },
+  {
+    "name": "rio tercero",
+    "prefix": "3571"
+  },
+  {
+    "name": "rivera",
+    "prefix": "2935"
+  },
+  {
+    "name": "rojas",
+    "prefix": "2475"
+  },
+  {
+    "name": "rosario",
+    "prefix": "341"
+  },
+  {
+    "name": "rosario del tala",
+    "prefix": "3445"
+  },
+  {
+    "name": "rufino",
+    "prefix": "3382"
+  },
+  {
+    "name": "saladas",
+    "prefix": "3782"
+  },
+  {
+    "name": "saladillo",
+    "prefix": "2344"
+  },
+  {
+    "name": "salazar",
+    "prefix": "2393"
+  },
+  {
+    "name": "salsacate",
+    "prefix": "3542"
+  },
+  {
+    "name": "salta",
+    "prefix": "387"
+  },
+  {
+    "name": "salto",
+    "prefix": "2474"
+  },
+  {
+    "name": "san agustin del valle fertil",
+    "prefix": "2646"
+  },
+  {
+    "name": "san andres de giles",
+    "prefix": "2325"
+  },
+  {
+    "name": "san antonio de areco",
+    "prefix": "2326"
+  },
+  {
+    "name": "san antonio oeste",
+    "prefix": "2934"
+  },
+  {
+    "name": "san carlos de bariloche",
+    "prefix": "294"
+  },
+  {
+    "name": "san clemente del tuyu",
+    "prefix": "2252"
+  },
+  {
+    "name": "san cristobal",
+    "prefix": "3408"
+  },
+  {
+    "name": "san francisco",
+    "prefix": "3564"
+  },
+  {
+    "name": "san francisco del chañar",
+    "prefix": "3522"
+  },
+  {
+    "name": "san javier",
+    "prefix": "3754"
+  },
+  {
+    "name": "san javier",
+    "prefix": "3405"
+  },
+  {
+    "name": "san jorge",
+    "prefix": "3406"
+  },
+  {
+    "name": "san jose de feliciano",
+    "prefix": "3458"
+  },
+  {
+    "name": "san juan",
+    "prefix": "264"
+  },
+  {
+    "name": "san julian",
+    "prefix": "2962"
+  },
+  {
+    "name": "san lorenzo",
+    "prefix": "3476"
+  },
+  {
+    "name": "san luis",
+    "prefix": "266"
+  },
+  {
+    "name": "san martin",
+    "prefix": "263"
+  },
+  {
+    "name": "san martin de los andes",
+    "prefix": "2972"
+  },
+  {
+    "name": "san miguel de tucuman",
+    "prefix": "381"
+  },
+  {
+    "name": "san nicolas",
+    "prefix": "336"
+  },
+  {
+    "name": "san pedro",
+    "prefix": "3329"
+  },
+  {
+    "name": "san pedro",
+    "prefix": "3888"
+  },
+  {
+    "name": "san rafael",
+    "prefix": "260"
+  },
+  {
+    "name": "san salvador de jujuy",
+    "prefix": "388"
+  },
+  {
+    "name": "santa fe",
+    "prefix": "342"
+  },
+  {
+    "name": "santa maria",
+    "prefix": "3838"
+  },
+  {
+    "name": "santa rosa",
+    "prefix": "2954"
+  },
+  {
+    "name": "santa rosa de calamuchita",
+    "prefix": "3546"
+  },
+  {
+    "name": "santa teresa",
+    "prefix": "3460"
+  },
+  {
+    "name": "santa teresita",
+    "prefix": "2246"
+  },
+  {
+    "name": "santiago del estero",
+    "prefix": "385"
+  },
+  {
+    "name": "santo tome",
+    "prefix": "3756"
+  },
+  {
+    "name": "sumampa",
+    "prefix": "3856"
+  },
+  {
+    "name": "sunchales",
+    "prefix": "3493"
+  },
+  {
+    "name": "suncho corral",
+    "prefix": "3855"
+  },
+  {
+    "name": "tafi del valle",
+    "prefix": "3867"
+  },
+  {
+    "name": "tandil",
+    "prefix": "249"
+  },
+  {
+    "name": "tapalque",
+    "prefix": "2283"
+  },
+  {
+    "name": "tartagal",
+    "prefix": "3873"
+  },
+  {
+    "name": "termas de rio hondo",
+    "prefix": "3858"
+  },
+  {
+    "name": "tinogasta",
+    "prefix": "3837"
+  },
+  {
+    "name": "trancas",
+    "prefix": "3862"
+  },
+  {
+    "name": "trelew, rawson",
+    "prefix": "280"
+  },
+  {
+    "name": "trenque lauquen",
+    "prefix": "2392"
+  },
+  {
+    "name": "tres arroyos",
+    "prefix": "2983"
+  },
+  {
+    "name": "tres lomas",
+    "prefix": "2394"
+  },
+  {
+    "name": "tunuyan",
+    "prefix": "2622"
+  },
+  {
+    "name": "ushuaia",
+    "prefix": "2901"
+  },
+  {
+    "name": "uspallata",
+    "prefix": "2624"
+  },
+  {
+    "name": "venado tuerto",
+    "prefix": "3462"
+  },
+  {
+    "name": "vera",
+    "prefix": "3483"
+  },
+  {
+    "name": "victoria",
+    "prefix": "3436"
+  },
+  {
+    "name": "victorica",
+    "prefix": "2338"
+  },
+  {
+    "name": "vicuña mackenna",
+    "prefix": "3583"
+  },
+  {
+    "name": "viedma",
+    "prefix": "2920"
+  },
+  {
+    "name": "villa angela",
+    "prefix": "3735"
+  },
+  {
+    "name": "villa carlos paz",
+    "prefix": "3541"
+  },
+  {
+    "name": "villa constitucion",
+    "prefix": "3400"
+  },
+  {
+    "name": "villa del rosario",
+    "prefix": "3573"
+  },
+  {
+    "name": "villa del totoral",
+    "prefix": "3524"
+  },
+  {
+    "name": "villa dolores",
+    "prefix": "3544"
+  },
+  {
+    "name": "villa gesell",
+    "prefix": "2255"
+  },
+  {
+    "name": "villa iris",
+    "prefix": "2925"
+  },
+  {
+    "name": "villa maria",
+    "prefix": "353"
+  },
+  {
+    "name": "villa san martin",
+    "prefix": "3845"
+  },
+  {
+    "name": "villaguay",
+    "prefix": "3455"
+  },
+  {
+    "name": "winifreda",
+    "prefix": "2333"
+  },
+  {
+    "name": "zapala",
+    "prefix": "2942"
+  },
+  {
+    "name": "zarate",
+    "prefix": "3487"
+  }
+]

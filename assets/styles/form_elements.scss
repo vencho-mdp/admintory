@@ -1,5 +1,7 @@
-button {
+/* Buttons */
+.btn {
   font-family: 'Roboto' !important;
+  white-space: nowrap;
 }
 .btn-disabled {
   background-color: rgb(0, 0, 0);
@@ -11,14 +13,34 @@ button {
   border-color: hsl(0, 0%, 0%);
   color: #fff !important;
 }
+
+/* Labels */
 label {
-  margin-bottom: 2px;
   font-size: 1.1rem;
+  margin: 0;
+  white-space: nowrap;
 }
 .invalid-feedback {
   font-size: 0.85rem;
 }
+
+/* Minor Changes */
 input,
 select {
   border-radius: 5px !important;
+}
+
+h1 {
+  color: $primary;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+
+/* Color */
+.bg-dark {
+  background: #151d31;
 }

@@ -30,8 +30,8 @@ export default {
     extendRoutes(routes, resolve) {
       routes.push({
         name: 'index',
-        path: '/',
-        component: resolve(__dirname, 'pages/suppliers.vue')
+        path: '',
+        component: resolve(__dirname, 'pages/suppliers/index.vue')
       });
     }
   },
@@ -65,13 +65,20 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/scss/main.scss', '@/assets/css/form_elements.css'],
+  css: [
+    '@/assets/scss/main.scss',
+    '@/assets/styles/form_elements.scss',
+    '@/assets/styles/page_transitions.css'
+  ],
 
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: '~/plugins/Vuelidate' }],
+  plugins: [
+    { src: '~/plugins/Vuelidate' },
+    { src: '~/plugins/Autocomplete', ssr: false }
+  ],
 
   /*
    ** Auto import components
@@ -88,6 +95,7 @@ export default {
     '@nuxtjs/svg',
     '@nuxtjs/auth-next',
     'bootstrap-vue/nuxt',
+    'nuxt-mq',
     '@nuxtjs/style-resources'
   ],
   bootstrapVue: {
@@ -97,6 +105,17 @@ export default {
   },
   styleResources: {
     scss: '@/assets/scss/_variables.scss'
+  },
+  mq: {
+    defaultBreakpoint: 'xl',
+    breakpoints: {
+      xs: 0,
+      sm: 576,
+      md: 768,
+      lg: 992,
+      xl: 1200,
+      xxl: Infinity
+    }
   },
   /*
    ** Server Middleware
@@ -117,5 +136,7 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {}
+  build: {
+    transpile: [({ isServer }) => 'vue-typeahead-bootstrap']
+  }
 };

@@ -8,14 +8,13 @@
       class="d-flex flex-column align-items-start mb-4"
       id="input-email"
     >
-      <label for="email">Email</label>
+      <label>Email</label>
       <b-input
         v-model="email"
         class="align-self-stretch rounded"
         @focus="showAlert = false"
         @blur="$v.email.$touch()"
         :state="$v.email.$dirty ? ($v.email.$error ? false : null) : null"
-        id="email"
       ></b-input>
       <b-form-invalid-feedback id="input-email-feedback"
         >Email Inválido</b-form-invalid-feedback
@@ -25,7 +24,7 @@
       class="d-flex flex-column align-items-start mb-4"
       id="input-password"
     >
-      <label for="password">Contraseña</label>
+      <label>Contraseña</label>
       <b-input
         v-model="password"
         class="align-self-stretch rounded"
@@ -33,13 +32,12 @@
         @blur="$v.password.$touch()"
         type="password"
         :state="$v.password.$dirty ? ($v.password.$error ? false : null) : null"
-        id="password"
       ></b-input>
       <b-form-invalid-feedback id="input-password-feedback"
         >Contraseña Inválida</b-form-invalid-feedback
       >
     </b-input-group>
-    <b-alert :show="showAlert" variant="danger" class="mt-1 mb-1"
+    <b-alert :show="showAlert" variant="danger" class="mt-1 mb-1 w-50"
       >Contraseña y/o Email Inválido</b-alert
     >
     <PrimaryButton type="submit" :isValid="isValid" class="w-50 mt-3 mb-3"

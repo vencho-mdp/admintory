@@ -39,7 +39,7 @@ class UserController {
         return res.status(401).json({ message: 'Invalid Password' });
 
       const accessToken = jwt.sign(
-        { id: db_query[0].password },
+        { id: db_query[0].id },
         process.env.ACCESS_TOKEN_SECRET,
         {
           expiresIn: 60 * 60 * 60 * 24

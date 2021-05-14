@@ -9,11 +9,14 @@
   div {
     background-color: #f3f3fa;
     display: flex;
-    padding: 0 20px 20px 0;
+  }
+  @media screen and (max-width: 992px) {
+    div {
+      flex-direction: column;
+    }
   }
   #Nuxt {
-    width: 80%;
-    margin-left: 40px;
-    margin-right: 20px;
+    width: 100%;
+    padding: 5vh;
   }
 </style>

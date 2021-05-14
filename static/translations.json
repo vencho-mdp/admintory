@@ -1,0 +1,8 @@
+{
+  "id": "ID",
+  "full_name": "Nombre",
+  "city": "Ciudad",
+  "address": "Calle",
+  "company": "Empresa",
+  "phone_number": "Teléfono"
+}
