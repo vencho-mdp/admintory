@@ -88,7 +88,6 @@
             email: this.email,
             password: this.password
           });
-          console.log(38);
           await this.$auth.loginWith('local', {
             data: {
               email: this.email,
@@ -97,7 +96,6 @@
           });
           this.$router.push('/');
         } catch (error) {
-          console.log(error);
           this.showAlert = true;
           this.$v.$reset();
           this.email = this.password = this.username = undefined;

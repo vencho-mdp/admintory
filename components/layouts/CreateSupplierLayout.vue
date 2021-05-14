@@ -197,7 +197,6 @@
         if (!supplierIdThatHasTakenTheFullName) return false;
         const isThatSupplierTheSameAsThisOne =
           supplierIdThatHasTakenTheFullName === this.$route.query?.id;
-        console.log(isThatSupplierTheSameAsThisOne);
         return !isThatSupplierTheSameAsThisOne;
       }
     },

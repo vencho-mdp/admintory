@@ -7,7 +7,6 @@ export const mutations = {
     state.suppliers = payload;
   },
   deleteItemLocally(state, payload) {
-    console.log(state[payload.entity].filter((el) => el.id !== payload.id));
     state[payload.entity] = state[payload.entity].filter(
       (el) => el.id !== payload.id
     );
@@ -21,7 +20,7 @@ export const actions = {
       const payload = await this.$axios.$get(`api/suppliers/${token}`);
       commit('setSuppliers', payload);
     } catch (error) {
-      console.log(20, error);
+      console.log('Error in setting suppliers:', error.message);
     }
   }
 };

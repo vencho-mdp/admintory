@@ -13,7 +13,6 @@ class SupplierController {
     } = req.body;
     const decodedUserid = jwt.verify(userid, process.env.ACCESS_TOKEN_SECRET)
       .id;
-    console.log(decodedUserid);
     try {
       const [id] = await db('supplier')
         .returning('id')
@@ -25,7 +24,6 @@ class SupplierController {
           phone_number,
           userid: decodedUserid
         });
-      console.log(id);
       return res.status(201).json({
         message: 'Supplier Created',
         id

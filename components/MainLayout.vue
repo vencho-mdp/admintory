@@ -1,5 +1,5 @@
 <template>
-  <main class="wrapper" v-if="fields[0]">
+  <main class="wrapper" v-if="fields">
     <h1 class="wrapper__title">{{ title }}</h1>
     <div class="wrapper__nav">
       <div class="wrapper__nav__primary-actions">
@@ -119,7 +119,6 @@
         } catch (error) {
           console.error(error);
         }
-        console.log(id, this.entity);
       },
       editItem(data) {
         this.$router.push({ path: `${this.entity}/edit`, query: data });

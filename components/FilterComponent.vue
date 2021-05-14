@@ -92,7 +92,6 @@
             : copy;
 
           if (!copy[0].price) {
-            console.log(appliedTypeFilter);
             this.$emit('update:filteredItems', appliedTypeFilter);
             return;
           }
