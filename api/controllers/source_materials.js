@@ -6,6 +6,7 @@ class SourceMaterialsController {
   async editSourceMaterial(req, res) {}
   async deleteSourceMaterial(req, res) {}
   async getAllSourceMaterials(req, res) {}
+  async updateSourceMaterial(req, res) {}
 }
 
 module.exports = new SourceMaterialsController();

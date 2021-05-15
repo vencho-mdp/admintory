@@ -11,8 +11,7 @@ class SupplierController {
       phone_number,
       userid
     } = req.body;
-    const decodedUserid = jwt.verify(userid, process.env.ACCESS_TOKEN_SECRET)
-      .id;
+
     try {
       const [id] = await db('supplier')
         .returning('id')
