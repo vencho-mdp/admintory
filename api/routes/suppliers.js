@@ -8,7 +8,7 @@ const {
 
 const router = Router();
 
-router.get('/:userid', getAllSuppliers);
+router.get('/', getAllSuppliers);
 router.post('/', createSupplier);
 router.patch('/:id', updateSupplier);
 router.delete('/:id', deleteSupplier);

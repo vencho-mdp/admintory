@@ -75,7 +75,6 @@
               password: this.password
             }
           });
-          console.log(res.data);
           this.$router.push('/');
         } catch (error) {
           console.error(error);

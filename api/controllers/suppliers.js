@@ -1,38 +1,14 @@
 const db = require('../db/db');
-const jwt = require('jsonwebtoken');
-
 class SupplierController {
   async createSupplier(req, res) {
-    const {
-      full_name,
-      city,
-      address,
-      company,
-      phone_number,
-      userid
-    } = req.body;
-    const decodedUserid = jwt.verify(userid, process.env.ACCESS_TOKEN_SECRET)
-      .id;
-    console.log(decodedUserid);
     try {
-      const [id] = await db('supplier')
-        .returning('id')
-        .insert({
-          full_name,
-          city,
-          address,
-          company,
-          phone_number,
-          userid: decodedUserid
-        });
-      console.log(id);
-      return res.status(201).json({
-        message: 'Supplier Created',
-        id
+      await db('supplier').insert(req.body);
+      res.status(201).json({
+        message: 'Supplier Created'
       });
     } catch (error) {
       console.log(error);
-      return res.status(500).json({
+      res.status(500).json({
         message: 'Something went wrong',
         error
       });
@@ -40,15 +16,14 @@ class SupplierController {
   }
   async updateSupplier(req, res) {
     const { id } = req.params;
+    console.log(id);
     try {
       await db('supplier')
-        .update({
-          ...req.body
-        })
+        .update(req.body)
         .where({ id });
-      return res.status(200).json({ message: 'Supplier Updated Successfully' });
+      res.status(200).json({ message: 'Supplier Updated Successfully' });
     } catch (error) {
-      return res.status(404).json({
+      res.status(404).json({
         message: 'Supplier does not exist'
       });
     }
@@ -56,29 +31,27 @@ class SupplierController {
   async deleteSupplier(req, res) {
     const { id } = req.params;
     try {
-      await db('supplier')
+      const res = await db('supplier')
         .where({ id })
         .del();
-      return res.status(202).json({
+      res.status(202).json({
         message: 'Supplier successfully eliminated'
       });
     } catch (error) {
-      return res.status(500).json({
+      res.status(500).json({
         message: 'Something went wrong',
         error
       });
     }
   }
   async getAllSuppliers(req, res) {
-    const { userid } = req.params;
-    const decodedUserid = jwt.verify(userid, process.env.ACCESS_TOKEN_SECRET)
-      .id;
+    const { userid } = req.body;
     try {
-      const suppliers = await db('supplier').where('userid', decodedUserid);
-      res.status(200).json([...suppliers]);
+      const suppliers = await db('supplier').where({ userid });
+      res.status(200).json(suppliers);
     } catch (error) {
-      return res.status(404).json({
-        message: 'That user does not have any suppliers'
+      res.status(404).json({
+        message: 'Invalid user id'
       });
     }
   }

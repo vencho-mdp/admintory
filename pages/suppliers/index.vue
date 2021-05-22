@@ -25,6 +25,11 @@
 
   export default {
     components: { MainLayout },
+    async asyncData({ store }) {
+      await store.dispatch('setSuppliers');
+      const translations = await getTranslations();
+      return { translations };
+    },
     computed: {
       ...mapState(['suppliers']),
       fields() {
@@ -33,17 +38,11 @@
               return { key: el, label: this.translations[el] };
             })
           : [];
-        console.log('Result', result);
         return result;
       },
       cities() {
         return [...new Set(this.suppliers.map((el) => el.city))];
       }
-    },
-    async asyncData({ store }) {
-      await store.dispatch('setSuppliers');
-      const translations = await getTranslations();
-      return { translations };
     }
   };
 </script>

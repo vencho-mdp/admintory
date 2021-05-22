@@ -11,7 +11,6 @@
       async handleFormSubmission(data) {
         try {
           const res = await this.$axios.$post('api/suppliers', data);
-          console.log(data, res);
         } catch (error) {
           console.error('Error', error);
         }

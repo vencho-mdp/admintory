@@ -4,5 +4,11 @@
   "city": "Ciudad",
   "address": "Calle",
   "company": "Empresa",
-  "phone_number": "Teléfono"
+  "phone_number": "Teléfono",
+  "color": "Color",
+  "quality": "Calidad",
+  "type": "Tipo",
+  "name": "Nombre",
+  "cost": "Precio",
+  "supplier_name": "Proveedor"
 }

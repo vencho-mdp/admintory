@@ -1,11 +1,11 @@
 <template>
-  <main class="wrapper" v-if="fields[0]">
+  <main class="wrapper" v-if="items[0]">
     <h1 class="wrapper__title">{{ title }}</h1>
     <div class="wrapper__nav">
       <div class="wrapper__nav__primary-actions">
         <PrimaryButton
           :isValid="true"
-          @click.native="$router.push(entity + '/create')"
+          @click.native="$router.push(parentRoute + '/create')"
         >
           <b-icon icon="plus" scale="1.5"></b-icon> Agregar</PrimaryButton
         >
@@ -34,7 +34,7 @@
     <PrimaryButton
       :isValid="true"
       class="mt-4 w-25"
-      @click.native="$router.push(entity + '/create')"
+      @click.native="$router.push(parentRoute + '/create')"
     >
       <b-icon icon="plus" scale="1.5"></b-icon> Empezá a
       agregarlos</PrimaryButton
@@ -83,7 +83,8 @@
       entity: String,
       fields: Array,
       firstCharactersOfEntity: String,
-      filters: Array
+      filters: Array,
+      route: String
     },
     components: {
       CustomTable,
@@ -107,6 +108,11 @@
         );
       }
     },
+    computed: {
+      parentRoute() {
+        return this.route || this.entity;
+      }
+    },
     methods: {
       downloadData() {
         jsonToCSVDownload(this.items, this.entity, true);
@@ -115,23 +121,22 @@
         const data = { entity: this.entity, id };
         this.$store.commit('deleteItemLocally', data);
         try {
-          await this.$axios.$delete(`api/${this.entity}/${id}`);
+          await this.$axios.$delete(`api/${this.parentRoute}/${id}`);
         } catch (error) {
           console.error(error);
         }
-        console.log(id, this.entity);
       },
       editItem(data) {
-        this.$router.push({ path: `${this.entity}/edit`, query: data });
+        this.$router.push({
+          path: `${this.parentRoute}/edit`,
+          query: data
+        });
       }
     }
   };
 </script>
 
 <style scoped lang="scss">
-  .btn {
-    height: 35px;
-  }
   .wrapper {
     h1 {
       text-align: center;

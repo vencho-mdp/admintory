@@ -10,6 +10,14 @@ app.use(express.json());
 //Morgan
 app.use(morgan('tiny'));
 
+//Middlewars
+const decodeJWT = require('./middlewars/decodeJWT');
+app.use((req, res, next) => {
+  const userid = req.body?.userid || req.query?.userid;
+  if (userid) decodeJWT(req, next, userid);
+  else next();
+});
+
 // Require API routes
 const routes = require('./routes/index');
 
