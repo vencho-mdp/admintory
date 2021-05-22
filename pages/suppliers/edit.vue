@@ -7,17 +7,14 @@
 
 <script>
   import CreateSupplierLayout from '../../components/layouts/CreateSupplierLayout';
-
-  const getDifference = (a, b) =>
-    Object.fromEntries(
-      Object.entries(b).filter(([key, val]) => key in a && a[key] !== val)
-    );
+  import getDifference from '../../mixins/getDifferenceBetweenObjects';
 
   export default {
     components: { CreateSupplierLayout },
+    mixins: [getDifference],
     methods: {
       async handleFormSubmission(data) {
-        const diffs = getDifference(this.initialValues, data);
+        const diffs = this.getDifference(this.initialValues, data);
         try {
           await this.$axios.patch(
             `api/suppliers/${this.initialValues.id}`,
@@ -29,11 +26,10 @@
         }
       }
     },
-    async asyncData(context) {
-      const query_params = context.route.query;
-      return { initialValues: query_params };
-    },
     computed: {
+      initialValues() {
+        return this.$route.query;
+      },
       formattedInitialValues() {
         const {
           city,

@@ -1,7 +1,6 @@
 /* Buttons */
 .btn {
   font-family: 'Roboto' !important;
-  white-space: nowrap;
 }
 .btn-disabled {
   background-color: rgb(0, 0, 0);
@@ -18,12 +17,16 @@
 label {
   font-size: 1.1rem;
   margin: 0;
+  font-weight: 550;
   white-space: nowrap;
+  color: #333333;
 }
 .invalid-feedback {
   font-size: 0.85rem;
 }
-
+.label-description {
+  color: #8b8b8b;
+}
 /* Minor Changes */
 input,
 select {

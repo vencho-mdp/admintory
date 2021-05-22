@@ -18,7 +18,9 @@
             >
               {{ primaryButtonContent }}
             </PrimaryButton>
-            <SecondaryButton>Cancelar</SecondaryButton>
+            <SecondaryButton @click.native="$router.push(nextRoute)"
+              >Cancelar</SecondaryButton
+            >
           </span>
         </b-form>
       </b-card-body>
@@ -31,7 +33,8 @@
     props: {
       title: String,
       isValid: Boolean,
-      primaryButtonContent: String
+      primaryButtonContent: String,
+      nextRoute: String
     }
   };
 </script>
@@ -46,9 +49,10 @@
     .card {
       text-align: center;
       height: 100%;
-      width: clamp(300px, 550px, 100%);
+      width: clamp(300px, 500px, 100%);
       padding: 0;
       .card-body {
+        padding: 2rem;
         h1 {
           margin: 0;
         }

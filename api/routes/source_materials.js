@@ -8,7 +8,7 @@ const {
 
 const router = Router();
 
-router.get('/:userid', getAllSourceMaterials);
+router.get('/', getAllSourceMaterials);
 router.post('/', createSourceMaterial);
 router.patch('/:id', updateSourceMaterial);
 router.delete('/:id', deleteSourceMaterial);

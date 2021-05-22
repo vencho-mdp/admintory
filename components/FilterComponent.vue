@@ -22,7 +22,7 @@
       <b-input-group>
         <label for="min">Precio Mínimo</label>
         <b-input
-          :state="isMinHigherOrEqualToMax"
+          :state="isMinNotHigherOrEqualToMax"
           v-model.number="priceFilter.min"
           type="number"
           size="sm"
@@ -36,7 +36,7 @@
           type="number"
           size="sm"
           id="max"
-          :state="isMinHigherOrEqualToMax"
+          :state="isMinNotHigherOrEqualToMax"
         /> </b-input-group
     ></span>
   </b-form>
@@ -59,7 +59,7 @@
           max: undefined
         },
         typeFilter: undefined,
-        isMinHigherOrEqualToMax: null
+        isMinNotHigherOrEqualToMax: null
       };
     },
     methods: {
@@ -79,33 +79,44 @@
       combinedFilters: {
         deep: true,
         handler(newValue) {
+          //Reset
+          this.isMinNotHigherOrEqualToMax = null;
+
           const { min = 0, max = Infinity, type } = newValue;
-          //For ref problems
-          const copy = this.items.map((el) => Object.assign({}, el));
+          const getDigits = (val) => Number(val.replace(/[^0-9]/g, ''));
 
           const typeProperty = this.filters.find((el) => el.type === 'type')
             ?.property;
 
-          //Filters
-          const appliedTypeFilter = copy
-            ? copy.filter((el) => (type ? el[typeProperty] === type : true))
-            : copy;
+          const priceProperty = this.filters.find((el) => el.type === 'price')
+            ?.property;
 
-          if (!copy[0].price) {
+          //Filters
+          const appliedTypeFilter = this.items
+            ? this.items.filter((el) =>
+                type ? el[typeProperty] === type : true
+              )
+            : this.items;
+
+          if (!this.items[0][priceProperty]) {
             this.$emit('update:filteredItems', appliedTypeFilter);
             return;
           }
+
           const appliedMinFilter = appliedTypeFilter.filter(
-            (el) => el.price >= min
+            (el) => getDigits(el[priceProperty]) >= min
           );
+
           if (max <= min) {
-            this.isMinHigherOrEqualToMax = true;
+            this.isMinNotHigherOrEqualToMax = false;
             this.$emit('update:filteredItems', appliedMinFilter);
             return;
           }
-          const appliedMaxFilter = appliedTypeFilter.filter(
-            (el) => el.price <= max
+
+          const appliedMaxFilter = appliedMinFilter.filter(
+            (el) => getDigits(el[priceProperty]) <= max
           );
+
           this.$emit('update:filteredItems', appliedMaxFilter);
         }
       }

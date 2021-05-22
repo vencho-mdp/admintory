@@ -15,9 +15,9 @@
               ? !$v.form.name.$error && !isNameAndSurnameAlreadyTaken
                 ? null
                 : false
-              : !isNameAndSurnameAlreadyTaken
-              ? null
-              : false
+              : isNameAndSurnameAlreadyTaken
+              ? false
+              : null
           "
           @blur="$v.form.name.$touch()"
           type="text"
@@ -39,9 +39,9 @@
               ? !$v.form.surname.$error && !isNameAndSurnameAlreadyTaken
                 ? null
                 : false
-              : !isNameAndSurnameAlreadyTaken
-              ? null
-              : false
+              : isNameAndSurnameAlreadyTaken
+              ? false
+              : null
           "
           @blur="$v.form.surname.$touch()"
         ></b-form-input>
@@ -147,6 +147,7 @@
 
   export default {
     components: { Form, Autocomplete },
+    fetchOnServer: false,
     props: {
       formData: [Object]
     },
@@ -174,7 +175,6 @@
       this.cities = await getCities();
       this.prefixes = await getPrefixes();
     },
-    fetchOnServer: false,
     watch: {
       city: {
         handler(val) {
@@ -187,17 +187,12 @@
     computed: {
       ...mapState(['suppliers']),
       isNameAndSurnameAlreadyTaken() {
-        const supplierIdThatHasTakenTheFullName = this.suppliers
-          .map((el) => {
-            return { full_name: el.full_name, id: el.id };
-          })
-          .find(
-            (el) => el.full_name === `${this.form.name} ${this.form.surname}`
-          )?.id;
-        if (!supplierIdThatHasTakenTheFullName) return false;
-        const isThatSupplierTheSameAsThisOne =
-          supplierIdThatHasTakenTheFullName === this.$route.query?.id;
-        return !isThatSupplierTheSameAsThisOne;
+        return this.$store.getters.isNameTaken({
+          id: this.$route.query?.id,
+          property: 'full_name',
+          takenValue: `${this.form.name} ${this.form.surname}`,
+          entity: 'suppliers'
+        });
       }
     },
     validations: {
@@ -246,7 +241,6 @@
 
 <style scoped lang="scss">
   .input-group {
-    display: flex;
     align-items: flex-start;
     gap: 5%;
     width: clamp(45%, 45%, 100%);
