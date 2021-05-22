@@ -6,7 +6,8 @@ module.exports = {
     connection: {
       database: "admintory",
       user: process.env.USER,
-      password: "root"
+      password: "root",
+      host: 'pgdb'
     },
     pool: {
       min: 2,

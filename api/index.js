@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(morgan('tiny'));
 
 //Middlewars
-const decodeJWT = require('./middlewars/decodeJWT');
+const decodeJWT = require('./middlewares/decodeJWT');
 app.use((req, res, next) => {
   const userid = req.body?.userid || req.query?.userid;
   if (userid) decodeJWT(req, next, userid);
